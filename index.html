@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Test Printing</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="input-road">
+            <div class="block">
+                <input placeholder="введите длину дороги" id="length" name="length" value="500"></input>
+                <label for="length">Длина дороги</label>
+            </div>
+            <div class="block">
+                <input placeholder="введите ширину дороги" id="width" name="width" value="300"></input>
+                <label for="width">Ширина дороги</label>
+            </div>
+            <div class="block">
+                <input placeholder="введите количество полос" id="count" name="count" value="3"></input>
+                <label for="count">Количество полос</label>
+            </div>
+            <button id="submit">применить</button>
+            <br><br>
+            <button id="connect" disabled>connect</button>
+            <button id="disconnect" disabled>disconnect</button>
+        </div>
+        <div class="print" id="print">
+            <canvas width="0" height="0" id="road"></canvas>
+            <canvas width="0" height="0" id="cars"></canvas>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
